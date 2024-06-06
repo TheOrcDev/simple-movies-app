@@ -298,3 +298,9 @@
         background-color: transparent;
     }    
 }
+
+.movies-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+}

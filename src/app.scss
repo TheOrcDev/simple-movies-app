@@ -40,5 +40,45 @@
       height: 60vw;
     }
   }
-  
+}
+
+.modal { 
+  display: block; 
+  position: fixed;
+  z-index: 1000; 
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 40rem;
+  height: 25rem;
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+}
+
+.close-modal-button {
+  position: absolute;
+  right: 0px;
+  border: 1px solid black;
+  cursor: pointer;
+  :hover {
+    background-color: gray;
+    opacity: 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .modal { 
+    width: 30rem;
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .modal { 
+    width: 25rem;
+    height: 20rem;
+  }
 }
